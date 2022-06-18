@@ -1,0 +1,40 @@
+﻿<Window ResizeMode="CanMinimize"  x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Predator" Height="450" Width="800">
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="245*"/>
+            <ColumnDefinition Width="552*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock FontSize="40" FontStyle="Italic" HorizontalAlignment="Left" Margin="152,184,0,-184" Width="206" Text="Predator" Grid.ColumnSpan="2">
+            <TextBlock.Foreground>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF5A0000" Offset="0.161"/>
+                    <GradientStop Color="#FF672020" Offset="0.603"/>
+                    <GradientStop Color="#FF1A2525" Offset="0.878"/>
+                    <GradientStop Color="#FF9E8787" Offset="0.982"/>
+                    <GradientStop Color="#FF092A26" Offset="0.777"/>
+                </RadialGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <Button Margin="73,91,0,62" HorizontalAlignment="Left" Width="256" FontFamily="Fira Code" Foreground="Black" BorderBrush="Black" Click="acceptButton_Click" Background="Black" ClickMode="Press" ForceCursor="True"   Grid.Column="1" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" Cursor="Hand">
+            <Button.Style>
+                <Style/>
+            </Button.Style>
+            <StackPanel>
+                <Image Source="C:/Users/muham/Pictures/app_icon.ico" Width="250" Height="252"/>
+            </StackPanel>
+        </Button>
+
+        <Button  VerticalAlignment="Top" Name="StopButt" HorizontalAlignment="Left" Margin="73,372,0,0" Width="82" Grid.Column="1" Click="StopButt_Click" Visibility="Hidden" Background="DarkRed">
+            Ok
+        </Button>
+        <MediaElement Name="Video" Grid.ColumnSpan="2" Margin="53,29,75,62"  Visibility="Hidden"/>
+    </Grid>
+</Window>
