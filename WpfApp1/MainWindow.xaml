@@ -28,13 +28,13 @@
                 <Style/>
             </Button.Style>
             <StackPanel>
-                <Image Source="C:/Users/muham/Pictures/app_icon.ico" Width="250" Height="252"/>
+                <Image Source="/app_icon.ico" Width="250" Height="252"/>
             </StackPanel>
         </Button>
 
-        <Button  VerticalAlignment="Top" Name="StopButt" HorizontalAlignment="Left" Margin="73,372,0,0" Width="82" Grid.Column="1" Click="StopButt_Click" Visibility="Hidden" Background="DarkRed">
+        <Button  VerticalAlignment="Top" Name="StopButt" HorizontalAlignment="Left" Margin="73,372,0,0" Width="82" Grid.Column="1" Click="StopButt_Click" Visibility="Hidden" Background="DarkRed" >
             Ok
         </Button>
-        <MediaElement Name="Video" Grid.ColumnSpan="2" Margin="53,29,75,62"  Visibility="Hidden"/>
+        <MediaElement Name="Video" Grid.ColumnSpan="2" Margin="47,10,81,81" Visibility="Hidden"/>
     </Grid>
 </Window>
