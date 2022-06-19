@@ -8,9 +8,10 @@
         Title="Predator" Height="450" Width="800">
     <Grid Background="Black">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="245*"/>
-            <ColumnDefinition Width="552*"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="473*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
         <TextBlock FontSize="40" FontStyle="Italic" HorizontalAlignment="Left" Margin="152,184,0,-184" Width="206" Text="Predator" Grid.ColumnSpan="2">
             <TextBlock.Foreground>
@@ -23,7 +24,7 @@
                 </RadialGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
-        <Button Margin="73,91,0,62" HorizontalAlignment="Left" Width="256" FontFamily="Fira Code" Foreground="Black" BorderBrush="Black" Click="acceptButton_Click" Background="Black" ClickMode="Press" ForceCursor="True"   Grid.Column="1" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" Cursor="Hand">
+        <Button Margin="73,63,0,89" HorizontalAlignment="Left" Width="256" FontFamily="Fira Code" Foreground="Transparent" BorderBrush="Transparent" Click="acceptButton_Click" Background="Transparent"   Grid.Column="1"  Cursor="Hand" AutomationProperties.IsOffscreenBehavior="Onscreen" >
             <Button.Style>
                 <Style/>
             </Button.Style>
@@ -32,9 +33,9 @@
             </StackPanel>
         </Button>
 
-        <Button  VerticalAlignment="Top" Name="StopButt" HorizontalAlignment="Left" Margin="73,372,0,0" Width="82" Grid.Column="1" Click="StopButt_Click" Visibility="Hidden" Background="DarkRed" >
+        <Button VerticalAlignment="Top" Name="StopButt" HorizontalAlignment="Left" Margin="73,372,0,0" Width="82" Grid.Column="1" Click="StopButt_Click" Visibility="Hidden" Background="Transparent" Foreground="DarkBlue" >
             Ok
         </Button>
-        <MediaElement Name="Video" Grid.ColumnSpan="2" Margin="47,10,81,81" Visibility="Hidden"/>
+        <MediaElement Name="Video" Grid.ColumnSpan="3" Margin="47,10,81,81" Visibility="Hidden" />
     </Grid>
 </Window>
