@@ -8,7 +8,6 @@ C:\Users\muham\source\repos\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\WpfApp1.csp
 C:\Users\muham\source\repos\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\muham\source\repos\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\muham\source\repos\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\WpfApp1_MarkupCompile.cache
-C:\Users\muham\source\repos\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\WpfApp1_MarkupCompile.lref
 C:\Users\muham\source\repos\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\MainWindow.baml
 C:\Users\muham\source\repos\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\WpfApp1.g.resources
 C:\Users\muham\source\repos\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\WpfApp1.GeneratedMSBuildEditorConfig.editorconfig

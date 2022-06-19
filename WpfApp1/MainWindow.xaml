@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="Predator" Height="450" Width="800">
     <Grid Background="Black">
@@ -13,28 +12,26 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock FontSize="40" FontStyle="Italic" HorizontalAlignment="Left" Margin="152,184,0,-184" Width="206" Text="Predator" Grid.ColumnSpan="2">
-            <TextBlock.Foreground>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FF5A0000" Offset="0.161"/>
-                    <GradientStop Color="#FF672020" Offset="0.603"/>
-                    <GradientStop Color="#FF1A2525" Offset="0.878"/>
-                    <GradientStop Color="#FF9E8787" Offset="0.982"/>
-                    <GradientStop Color="#FF092A26" Offset="0.777"/>
-                </RadialGradientBrush>
-            </TextBlock.Foreground>
-        </TextBlock>
-        <Button Margin="73,63,0,89" HorizontalAlignment="Left" Width="256" FontFamily="Fira Code" Foreground="Transparent" BorderBrush="Transparent" Click="acceptButton_Click" Background="Transparent"   Grid.Column="1"  Cursor="Hand" AutomationProperties.IsOffscreenBehavior="Onscreen" >
-            <Button.Style>
-                <Style/>
-            </Button.Style>
+
+        <Button Margin="246,41,0,94"
+                HorizontalAlignment="Left"
+                Width="270"
+                FontFamily="Fira Code"
+                BorderBrush="Transparent"
+                BorderThickness="0"
+                Click="acceptButton_Click"
+                Background="Transparent"
+                Cursor="Hand"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" >
             <StackPanel>
-                <Image Source="/app_icon.ico" Width="250" Height="252"/>
+                <Image Source="/app_icon.ico" Width="270" Height="258"/>
             </StackPanel>
+
         </Button>
 
-        <Button VerticalAlignment="Top" Name="StopButt" HorizontalAlignment="Left" Margin="73,372,0,0" Width="82" Grid.Column="1" Click="StopButt_Click" Visibility="Hidden" Background="Transparent" Foreground="DarkBlue" >
-            Ok
+        <Button VerticalAlignment="Top" Name="StopButt" HorizontalAlignment="Left" Margin="73,372,0,0" Width="82" Grid.Column="1" Click="StopButt_Click" Visibility="Hidden" Background="Red" Foreground="Black" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+            ok
         </Button>
         <MediaElement Name="Video" Grid.ColumnSpan="3" Margin="47,10,81,81" Visibility="Hidden" />
     </Grid>

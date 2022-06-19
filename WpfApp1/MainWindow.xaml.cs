@@ -17,6 +17,7 @@ namespace WpfApp1
 
         private void acceptButton_Click(object sender, RoutedEventArgs e)
         {
+            e.Handled = false;
             Video.Visibility = Visibility.Visible;
             Video.Source = new Uri("C:/Users/muham/source/repos/WpfApp1/WpfApp1/clip.mp4");
             Video.LoadedBehavior = MediaState.Manual;
