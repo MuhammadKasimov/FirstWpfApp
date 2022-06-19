@@ -30,7 +30,7 @@
 
         </Button>
 
-        <Button VerticalAlignment="Top" Name="StopButt" HorizontalAlignment="Left" Margin="73,372,0,0" Width="82" Grid.Column="1" Click="StopButt_Click" Visibility="Hidden" Background="Red" Foreground="Black" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+        <Button VerticalAlignment="Top" Name="StopButt" HorizontalAlignment="Left" Margin="17,373,0,0" Width="82" Grid.Column="1" Click="StopButt_Click" Background="Red" Foreground="Black" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" RenderTransformOrigin="0.58,0.639" Visibility="Hidden">
             ok
         </Button>
         <MediaElement Name="Video" Grid.ColumnSpan="3" Margin="47,10,81,81" Visibility="Hidden" />
